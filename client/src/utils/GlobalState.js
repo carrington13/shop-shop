@@ -12,6 +12,8 @@ const StoreProvider = ({ value = [], ...props }) => {
     // every time we run StoreProvider, we instaniate initial Global State and dispatch = method used to update State.
     const [state, dispatch] = useProductReducer({
         products: [],
+        cart: [],
+        cartOpen: false,
         categories: [],
         currentCategory: '',
     });
